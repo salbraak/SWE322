@@ -22,6 +22,37 @@
     
     </script>
    
+<style> 
+
+div{
+
+    text-align :center;
+}
+
+
+
+body{
+    background-color : powderblue;
+}
+
+h1 {
+    text-align: center;
+    color :red;
+}
+
+p {
+
+    text-align :center;
+}
+
+ul{
+    text-align : center;
+}
+
+
+</style>
+   
+
     
     
     </head>
@@ -32,7 +63,7 @@
         
  <p id ="x";>  </p>
         
-<button onclick="myFunction()">show me the date</button>
+<div><button class="sal" onclick="myFunction()">show me the date</button> </div>
 
 
 
@@ -85,30 +116,80 @@ array_push($this ->finishedCurses , $arr ,$arr2 ,$arr3) ;
   //var_dump($opjectStudents);
 
     
-  $object_name = array_column($opjectStudents, 'name');
+  //$object_name = array_column($opjectStudents, 'name');
   
 
-    echo "<p>".$student1 ->name."</p>";
-    echo "<p>".$student2 ->id."</p>";
+    //echo "<p>".$student1 ->name."</p>";
+   // echo "<p>".$student2 ->id."</p>";
    // print_r ("<p>".$student1 ->finishedCurses."</p>");
 
-   echo "hello";
    
-   foreach ($student3 ->finishedCurses as $value) {
-       echo $value;
-      }
+   
+   //foreach ($student3 ->finishedCurses as $value) {
+    //   echo $value;
+    //  }
+
+
+      echo '<p>';
+
+      echo "students names";
+      echo "<br>";
     
 
+      foreach($opjectStudents as $i => $i_value) {
+        echo $i_value->name."<br>";
+    }
+
+    echo '</p>';
 
     echo '<p>';
 
-      foreach ($opjectStudents as $entry) {
-        if ($entry['id'] == $id) 
-           echo $entry['value'];
-     
+    echo "students id";
+    echo "<br>";
+    foreach($opjectStudents as $i => $i_value) {
+        echo $i_value->id."<br>";
+    }
+    echo '</p>';
+echo"<p>";
+    echo "the courses that student have finisdhed";
+    echo "</p>";
+
+   echo "<ul>";
+  
+
+
+    foreach($opjectStudents as $i => $i_value) {
+       echo" <li>";
+       print_r($i_value->finishedCurses);
+       echo "</li>";
+       if($i_value=="Advanced Web Programming"){
+           echo "the student is full stack";
+       }
+    }
+
+    echo "</ul>";
+
+    echo "<p>";
+
+    
+
+    //for($i = 0; i<count($finishedCurses); $i++){
+      //  if($finishedCurses['$i']=="Advanced Web Programming")
+      //  echo"nice";
+
+
+  //  }
+    foreach($opjectStudents as $value ->$i){
+        echo $value ->finishedCurses->i;
+        if($i=="Advanced Web Programming"){
+ 
+         echo "this student is great";
+        }
+ 
      }
-     echo '</p>';
-     
+    echo "</p>";
+
+    
     
     
    ?>
