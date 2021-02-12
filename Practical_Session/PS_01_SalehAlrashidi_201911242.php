@@ -43,6 +43,7 @@ h1 {
 p {
 
     text-align :center;
+    color:blue;
 }
 
 ul{
@@ -107,9 +108,9 @@ array_push($this ->finishedCurses , $arr ,$arr2 ,$arr3) ;
   $student4 = new Student;
   $student4 -> set_name_and_id("Ahmed",4);
   
-  $student4 -> set_arr("Linear Algebra", "Project Management" , "Probability and Statistics");
+  $student4 -> set_arr("Linear Algebra", "Project Management" , "Advanced Web Programming");
  
-    $opjectStudents = array($student1 , $student2, $student3, $student4);
+  $opjectStudents = array($student1 , $student2, $student3, $student4);
 
   //print_r($opjectStudents);
 
@@ -137,7 +138,13 @@ array_push($this ->finishedCurses , $arr ,$arr2 ,$arr3) ;
     
 
       foreach($opjectStudents as $i => $i_value) {
-        echo $i_value->name."<br>";
+        echo $i_value->name."<br> ";
+        if($i_value->name == "saleh"){
+
+            echo "hi";
+        }
+      
+       
     }
 
     echo '</p>';
@@ -147,50 +154,51 @@ array_push($this ->finishedCurses , $arr ,$arr2 ,$arr3) ;
     echo "students id";
     echo "<br>";
     foreach($opjectStudents as $i => $i_value) {
+        echo $i_value->name." = ";
         echo $i_value->id."<br>";
     }
     echo '</p>';
 echo"<p>";
-    echo "the courses that student have finisdhed";
+    echo "the courses that student have finished";
     echo "</p>";
-
+    
    echo "<ul>";
+  
   
 
 
     foreach($opjectStudents as $i => $i_value) {
        echo" <li>";
+       echo $i_value->name."<br> "; 
        print_r($i_value->finishedCurses);
+    echo "<br>";
+    for($i=0; $i<3; $i++){
+        echo $i_valaue->finishedCurses[$i];
+    if($i_value -> finishedCurses[$i]=="Advanced Web Programming")
+     echo "<p>This student is full stack developer!</p>";
+    
+    }
+    
+     
+
+    echo "<hr>";
+    echo "<br>";
        echo "</li>";
-       if($i_value=="Advanced Web Programming"){
-           echo "the student is full stack";
-       }
+      
     }
 
     echo "</ul>";
 
-    echo "<p>";
+    
 
     
 
-    //for($i = 0; i<count($finishedCurses); $i++){
-      //  if($finishedCurses['$i']=="Advanced Web Programming")
-      //  echo"nice";
-
-
-  //  }
-    foreach($opjectStudents as $value ->$i){
-        echo $value ->finishedCurses->i;
-        if($i=="Advanced Web Programming"){
- 
-         echo "this student is great";
-        }
- 
-     }
-    echo "</p>";
-
     
-    
+
+  
+  
+
+  
     
    ?>
    
