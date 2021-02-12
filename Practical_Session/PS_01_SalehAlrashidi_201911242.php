@@ -139,10 +139,7 @@ array_push($this ->finishedCurses , $arr ,$arr2 ,$arr3) ;
 
       foreach($opjectStudents as $i => $i_value) {
         echo $i_value->name."<br> ";
-        if($i_value->name == "saleh"){
-
-            echo "hi";
-        }
+        
       
        
     }
