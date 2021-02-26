@@ -34,20 +34,64 @@ $n6 = $n3.$n4;
 
 echo "$n";
 
+echo"<br>";
 
-echo $n2;
+
+echo"<br>";
 echo "$s";
 
+echo"<br>";
 echo "$n1";
+echo"<br>";
+
+echo $n2;
+echo"<br>";
+echo $n3;
+echo"<br>";
 
 echo "$n4";
+echo"<br>";
 
 echo "$n5";
-
+echo"<br>";
 echo "$n6";
+echo"<br>";
 
 
-//echo "$n2";
+
+ 
+
+
+
+$number = array (1,2,3,4,5);
+
+
+echo"this is muy array";
+
+echo"<br>";
+echo"$number[0]";
+
+$arrayCount = count($number);
+
+echo"my array count is .$arrayCount";
+
+echo "<br>";
+$number1 = 1;
+
+
+
+for ($i = 0; $i < $arrayCount; $i++) {
+
+    if ($number[$i]==1){
+        echo"<br>";
+        echo"this numbe is 1" ;
+        echo "<br>";
+    }
+
+    echo $number[$i];
+  }
+
+
 
 
 
