@@ -1,0 +1,59 @@
+.bb
+{
+background-image: url("poke.jpg");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+
+}
+
+/* in the paragraph i change the color and font size and add some style and font famliy */
+.form
+{
+color:black;
+font-family:monospace;
+font-style: Bold;
+font-size:250%;
+text-align:center;
+text-decoration-style: solid;
+
+}
+/*I changed the button color and add a border*/
+.login-button
+{
+background-color:goldenrod;
+color: black;
+padding: 20px 20px;
+text-align: center;
+font-size: 25px;
+margin: 4px 5px;
+cursor: pointer;
+}  
+
+.PP
+{
+ font-size:195%;
+color:white;    
+}
+/* here is the table and i add border and color */
+#Table , #TR , #TD
+{
+     border: 12px solid yellow ;
+border-collapse: collapse;
+padding: 15px;
+table-layout: auto;
+background-color: black;
+font-size:125%;
+color: black;
+}
+
+.H
+{
+ font-size: 50px;
+    
+    color: black;
+    border-color:black;
+    border-width: thick;
+    padding: 5px 25px;  
+    text-align: center;
+}
